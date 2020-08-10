@@ -1,0 +1,61 @@
+objective
+This challenge will help you to learn how to take a character, a string and a sentence as input in C.
+
+To take a single character ch as input, you can use scanf("%c", &ch ); and printf("%c", ch) writes a character specified by the argument char to stdout
+
+
+char ch
+scanf("%c",&ch)
+printf("%c",ch)
+
+TASK
+
+You have to print the character,ch,in the first line. The print "s" in next line. In the line print the sentence,sen.
+
+Input Format 
+
+First, take a character, ch as input.
+Then take the string, s as input.
+Lastly, take the sentences sen as input.
+
+Output Format 
+
+Print the three lines of ouput. The first line prints the character,ch
+The second line prints the string, s .
+The third line prints the sentence, sen .
+
+SAMPLE INPUT 0
+
+C
+Language
+Welcome to C!!
+
+SAMPLE OUTPUT
+
+C
+Language
+Welcome to C!!
+
+
+
+CODE:-
+
+
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+
+intmain()
+ {
+ char ch;char str[20];char str_2[100];
+ scanf("%c",&ch);
+ scanf("%s",str);
+ scanf("\n");
+ scanf("%[^\n]%*c",str_2);
+ printf("%c \n",ch);
+ printf("%s \n",str);
+ printf("%s \n",str_2);
+ 
+ return 0;
+ }
